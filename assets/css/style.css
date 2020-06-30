@@ -159,6 +159,9 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
+
+
 .nav-menu ul {
   margin: 0;
   padding: 0;
@@ -253,6 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   right: 15px;
 }
+
 
 @media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
@@ -676,7 +680,8 @@ section {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background-image: url("../img/paisaje.jpg");
+  background-color: #fff;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -685,6 +690,7 @@ section {
   overflow: hidden;
  
 }
+
 
 #about::before {
   content: '';
@@ -770,6 +776,12 @@ section {
   color: #333;
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
+}
+
+@media (max-width: 767px) {
+  #about {
+    height: 100%;
+  }
 }
 
 /* Services Section
@@ -1146,7 +1158,7 @@ section {
 
 @media (max-width: 768px) {
   .portfolio-details .portfolio-description h2 {
-    width: 100%;
+    width: auto;
   }
   .portfolio-details .portfolio-info {
     position: static;
@@ -1270,14 +1282,22 @@ section {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
   padding: 60px 0;
+}
+
+.nuestrasmarcas{
+  
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #team .member {
   text-align: center;
   margin-bottom: 20px;
-  background: #000;
+  /*background: #000;*/
   position: relative;
 }
 
@@ -1340,6 +1360,20 @@ section {
 #team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+@media (max-width: 767px) {
+  #team {
+    height: 100%;
+  }
+}
+
+/* Oulet Section 
+--------------------------------*/
+
+.map{
+ margin-left: auto;
+ margin-right: auto;
 }
 
 /* Contact Section

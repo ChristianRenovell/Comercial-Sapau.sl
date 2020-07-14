@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Sapau-Campingaz</title>
+  <title>Sapau-Coleman</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -45,51 +45,9 @@
 </head>
 
 <body>
-  <script>
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    //CREAMOS LOS PLAYER DE LOS VIDEOS QUE AÑADIREMOS AL SLIDE
-    function onYouTubeIframeAPIReady() {
-
-      player = new YT.Player('player', {
-        height: '390',
-        width: '640',
-        videoId: '9iFU-jF3iIU'
-      });
-      player2 = new YT.Player('player2', {
-        height: '390',
-        width: '640',
-        videoId: 'SvXdLAdy9d8'
-      });
-      player3 = new YT.Player('player3', {
-        height: '390',
-        width: '640',
-        videoId: 'P-CKi-4mdp0'
-      });
-    }
-
-    //Functions to stop-pause Video  
-    /*function stopVideo() {
-      player.stopVideo();
-      player2.stopVideo();
-      player3.stopVideo();
-    }*/
-
-    function pauseVideo() {
-      player.pauseVideo();
-      player2.pauseVideo();
-      player3.pauseVideo();
-    }
-  </script>
-
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top  ">
     <div class="container-fluid">
-
       <div class="row justify-content-center">
         <div class="col-xl-11 d-flex align-items-center">
           <a href="../index.html"><img src="../assets/img/logos/sapauLogo2.png" alt="" width="200px" height="auto"><img /></a>
@@ -134,75 +92,25 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="d-flex col-md-12 mb-2 justify-content-center" id="im">
-              <img src="../assets/img/logos/coleman-mini.png" class="img-fluid" alt="campingaz" width="230px">
+            <div class="section-header">
+              <h3>OFERTAS VARIOS</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <!--NAV video catalogo-->
-      <div class="container mb-5 mt-3">
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active catalogo" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-              aria-controls="nav-home" aria-selected="true">Videos</a>
-            <a class="nav-item nav-link catalogo" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-              aria-controls="nav-profile" aria-selected="false" onclick="pauseVideo()">Catalogo</a>
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <!-- ======= Breadcrumbs Section ======= -->
-            <section>
-                      <!-- Carousel -->
-                      <div id="carousel-example" class="carousel slide">                       
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <!--<h2 class="m-2">TITULO UNO</h2>-->
-                            <div class="embed-responsive embed-responsive-16by9" id="popupVid">
-                              <div id="player"></div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <!--<h2 class="m-2">TITULO DOS</h2>-->
-                            <div class="embed-responsive embed-responsive-16by9">
-                              <div id="player2"></div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <!--<h2 class="m-2">TITULO TRES</h2>-->
-                            <div class="embed-responsive embed-responsive-16by9">
-                              <div id="player3"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div><a class="carousel-control-prev btSlides" href="#carousel-example" role="button"
-                            data-slide="prev" id="botPrev" onClick="pauseVideo()"></div>
-                        <span aria-hidden="true"><img src="../assets/img/left.png" class="img-fluid" alt="siguiente"
-                            width="25px"></span>
-                        <span class="sr-only">Previous</span>
-                        </a>
-                        <div id="botNext"><a class="carousel-control-next btSlides" href="#carousel-example"
-                            role="button" data-slide="next" onClick="pauseVideo()"></div>
-                        <span aria-hidden="true"><img src="../assets/img/right.png" class="img-fluid" alt="anterior"
-                            width="25px"></span>
-                        <span class="sr-only">Next</span>
-                        </a>  
-            </section><!-- Breadcrumbs Section -->
-          </div>
-          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <iframe
-            src="https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-            width="100%" height="625px"></iframe>
-          </div>
+        <div class="container">
+          <iframe
+          src="https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+          width="100%" height="625px"></iframe>
         </div>
-      </div>
+    </div>
       <!-- END NAV video catalogo-->
     </section>
 
   </main><!-- End #main -->
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">

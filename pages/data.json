@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1",
+        "brand":"campingaz",
+        "logo": "../assets/img/logos/campingaz-mini.png",
+        "urlV1": "UrZtRpwf6pQ",
+        "url2":"JYUMGjAdyU0",
+        "url3":"LwyqP_ToYzE",
+        "urlCatalog":"https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+    },
+    {
+        "id": "2",
+        "brand":"",
+        "logo": "",
+        "urlV1": "",
+        "url2":"",
+        "url3":"",
+        "urlCatalog":""
+    },
+    {
+        "id": "3",
+        "brand":"",
+        "logo": "",
+        "urlV1": "",
+        "url2":"",
+        "url3":"",
+        "urlCatalog":""
+    },
+    {
+        "id": "4",
+        "brand":"",
+        "logo": "",
+        "urlV1": "",
+        "url2":"",
+        "url3":"",
+        "urlCatalog":""
+    },
+    {
+        "id": "5",
+        "brand":"",
+        "logo": "",
+        "urlV1": "",
+        "url2":"",
+        "url3":"",
+        "urlCatalog":""
+    },
+    {
+        "id": "6",
+        "brand":"",
+        "logo": "",
+        "urlV1": "",
+        "url2":"",
+        "url3":"",
+        "urlCatalog":""
+    },
+    {
+        "id": "7",
+        "brand":"",
+        "logo": "",
+        "urlV1": "",
+        "url2":"",
+        "url3":"",
+        "urlCatalog":""
+    }
+]

@@ -10,9 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="../assets/img/logos/logo.png" rel="icon">
+  <link href="../assets/img/logos/logo.png" rel="apple-touch-icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
     rel="stylesheet">
@@ -43,9 +42,23 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
 <body>
   <script>
+
+    var requestURL = 'https://raw.githubusercontent.com/ChristianRenovell/jsonParticipantes/master/participantes.json';
+    var request = new XMLHttpRequest();
+    
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function() {
+        // variable de objeto json
+        var datos = request.response;     
+        //almacenamos el json en una variable
+        var res = datos['body']; 
+    
+
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -89,30 +102,30 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-11 d-flex align-items-center">
+          <img src="../assets/img/logos/logo.png" alt="" width="80px" height="auto"><img />
           <h1 class="logo mr-auto"><a href="../index.html">SAPAU</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
           <nav class="nav-menu d-none d-lg-block ">
-            <ul>
-              <li class="active"><a href="index.html">Inicio</a></li>
-              <li><a href="index.html#about">Sobre nosotros</a></li>
-              <li class="drop-down"><a href="index.html#team">Nuestras marcas</a>
+           <ul>
+              <li class="active"><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#about">Sobre nosotros</a></li>
+              <li class="drop-down"><a href="../index.html#team">Nuestras marcas</a>
                 <ul>
-                  <li><a href="index.html#team">TODAS</a></li>
-                  <li><a href="#">Campingaz</a></li>
-                  <li><a href="#">Coleman</a></li>
-                  <li><a href="#">Sevylor</a></li>
-                  <li><a href="#">Gre</a></li>
-                  <li><a href="#">Zodiac</a></li>
-                  <li><a href="#">Crespo</a></li>
-                  <li><a href="#">Fiskars</a></li>
-                  <li><a href="#">M Confort</a></li>
-                  <li><a href="#">Bo-Camp</a></li>
-                  <li><a href="#">Plasmir</a></li>
+                  <li><a href="../pages/campingaz.html">Campingaz</a></li>
+                  <li><a href="../pages/coleman.html">Coleman</a></li>
+                  <li><a href="../pages/sevylor.html">Sevylor</a></li>
+                  <li><a href="../pages/gre.html">Gre</a></li>
+                  <li><a href="../pages/zodiac.html">Zodiac</a></li>
+                  <li><a href="../pages/crespo.html">Crespo</a></li>
+                  <li><a href="../pages/fiskars.html">Fiskars</a></li>
+                  <li><a href="../pages/mconfort.html">M Confort</a></li>
+                  <li><a href="../pages/bocamp.html">Bo-Camp</a></li>
+                  <li><a href="../pages/plasmis.html">Plasmir</a></li>
                 </ul>
               </li>
-              <li><a href="index.html#oulet">Ofertas outlet</a></li>
-              <li><a href="index.html#contact">contacto</a></li>
+              <li><a href="../index.html#oulet">Ofertas outlet</a></li>
+              <li><a href="../index.html#contact">contacto</a></li>
               <li>
                 <a href="#"><img src="../assets/img/es.png" class="img-fluid " alt="" width="25px"></a>
               </li>
@@ -139,68 +152,67 @@
       </div>
     </section>
     <section>
-           <!--NAV video catalogo-->
-           <div class="container mb-5 mt-3">
-            <nav>
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active catalogo" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                  aria-controls="nav-home" aria-selected="true">Videos</a>
-                <a class="nav-item nav-link catalogo" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                  aria-controls="nav-profile" aria-selected="false">Catalogo</a>
-              </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <!-- ======= Breadcrumbs Section ======= -->
-                <section>
-                          <!-- Carousel -->
-                          <div id="carousel-example" class="carousel slide">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <!--<h2 class="m-2">TITULO UNO</h2>-->
-                                <div class="embed-responsive embed-responsive-16by9" id="popupVid">
-                                  <div id="player"></div>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <!--<h2 class="m-2">TITULO DOS</h2>-->
-                                <div class="embed-responsive embed-responsive-16by9">
-                                  <div id="player2"></div>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <!--<h2 class="m-2">TITULO TRES</h2>-->
-                                <div class="embed-responsive embed-responsive-16by9">
-                                  <div id="player3"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div><a class="carousel-control-prev btSlides" href="#carousel-example" role="button"
-                                data-slide="prev" id="botPrev" onClick="pauseVideo()"></div>
-                            <span aria-hidden="true"><img src="../assets/img/left.png" class="img-fluid" alt="siguiente"
-                                width="25px"></span>
-                            <span class="sr-only">Previous</span>
-                            </a>
-                            <div id="botNext"><a class="carousel-control-next btSlides" href="#carousel-example"
-                                role="button" data-slide="next" onClick="pauseVideo()"></div>
-                            <span aria-hidden="true"><img src="../assets/img/right.png" class="img-fluid" alt="anterior"
-                                width="25px"></span>
-                            <span class="sr-only">Next</span>
-                            </a>  
-                </section><!-- Breadcrumbs Section -->
-              </div>
-              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <iframe
-                src="https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-                width="100%" height="625px"></iframe>
-              </div>
-            </div>
+      <!--NAV video catalogo-->
+      <div class="container mb-5 mt-3">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active catalogo" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+              aria-controls="nav-home" aria-selected="true">Videos</a>
+            <a class="nav-item nav-link catalogo" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"  onclick="pauseVideo()">Catalogo</a>
           </div>
-          <!-- END NAV video catalogo-->
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <!-- ======= Breadcrumbs Section ======= -->
+            <section>
+              <!-- Carousel -->
+              <div id="carousel-example" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <!--<h2 class="m-2">TITULO UNO</h2>-->
+                    <div class="embed-responsive embed-responsive-16by9" id="popupVid">
+                      <div id="player"></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!--<h2 class="m-2">TITULO DOS</h2>-->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <div id="player2"></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!--<h2 class="m-2">TITULO TRES</h2>-->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <div id="player3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div><a class="carousel-control-prev btSlides" href="#carousel-example" role="button" data-slide="prev"
+                    id="botPrev" onClick="pauseVideo()"></div>
+                <span aria-hidden="true"><img src="../assets/img/left.png" class="img-fluid" alt="siguiente"
+                    width="25px"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <div id="botNext"><a class="carousel-control-next btSlides" href="#carousel-example" role="button"
+                    data-slide="next" onClick="pauseVideo()"></div>
+                <span aria-hidden="true"><img src="../assets/img/right.png" class="img-fluid" alt="anterior"
+                    width="25px"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </section><!-- Breadcrumbs Section -->
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <iframe
+              src="https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+              width="100%" height="625px"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- END NAV video catalogo-->
     </section>
 
   </main><!-- End #main -->
-  
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">

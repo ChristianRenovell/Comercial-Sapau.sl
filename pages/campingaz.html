@@ -42,60 +42,70 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+
 <body>
   <script>
-
-    var requestURL = 'https://raw.githubusercontent.com/ChristianRenovell/jsonParticipantes/master/participantes.json';
-    var request = new XMLHttpRequest();
-    
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
-
-    request.onload = function() {
+    const promise = new Promise((resolve, reject) => {
+      var requestURL = 'https://raw.githubusercontent.com/ChristianRenovell/Comercial-Sapau.sl/master/data.json';
+      var request = new XMLHttpRequest();
+      request.open('GET', requestURL);
+      request.responseType = 'json';
+      request.send();
+      request.onload = function () {
         // variable de objeto json
-        var datos = request.response;     
+        var datos = request.response;
         //almacenamos el json en una variable
-        var res = datos['body']; 
-    
+        var res = datos;
+        resolve(res)
+      }
 
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    //CREAMOS LOS PLAYER DE LOS VIDEOS QUE AÑADIREMOS AL SLIDE
-    function onYouTubeIframeAPIReady() {
-
-      player = new YT.Player('player', {
+    });
+    promise.then(res => {
+     
+      objetVideo = {
         height: '390',
         width: '640',
-        videoId: 'UrZtRpwf6pQ'
-      });
-      player2 = new YT.Player('player2', {
+        videoId: res[0].urlV1
+      }
+      objetVideo1 = {
         height: '390',
         width: '640',
-        videoId: 'JYUMGjAdyU0'
-      });
-      player3 = new YT.Player('player3', {
+        videoId: res[0].urlV2
+      }
+      objetVideo2 = {
         height: '390',
         width: '640',
-        videoId: 'LwyqP_ToYzE'
-      });
+        videoId: res[0].urlV3
+      }
+
+       //gettDataJson(res);
+    });
+
+    function gettDataJson(){
+
+      console.log(res)
+
     }
 
-    //Functions to stop-pause Video  
-    /*function stopVideo() {
-      player.stopVideo();
-      player2.stopVideo();
-      player3.stopVideo();
-    }*/
+    var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+      //CREAMOS LOS PLAYER DE LOS VIDEOS QUE AÑADIREMOS AL SLIDE
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', objetVideo);
+        player2 = new YT.Player('player2', objetVideo2);
+        player3 = new YT.Player('player3', objetVideo3);
+      }
+    
     function pauseVideo() {
       player.pauseVideo();
       player2.pauseVideo();
       player3.pauseVideo();
     }
+
+
   </script>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top  ">
@@ -107,7 +117,7 @@
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
           <nav class="nav-menu d-none d-lg-block ">
-           <ul>
+            <ul>
               <li class="active"><a href="../index.html">Inicio</a></li>
               <li><a href="../index.html#about">Sobre nosotros</a></li>
               <li class="drop-down"><a href="../index.html#team">Nuestras marcas</a>
@@ -158,7 +168,8 @@
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <a class="nav-item nav-link active catalogo" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
               aria-controls="nav-home" aria-selected="true">Videos</a>
-            <a class="nav-item nav-link catalogo" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"  onclick="pauseVideo()">Catalogo</a>
+            <a class="nav-item nav-link catalogo" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+              aria-controls="nav-profile" aria-selected="false" onclick="pauseVideo()">Catalogo</a>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">

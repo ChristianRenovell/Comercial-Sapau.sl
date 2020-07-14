@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "brand":"campingaz",
+        "brand":"Campingaz",
         "logo": "../assets/img/logos/campingaz-mini.png",
         "urlV1": "UrZtRpwf6pQ",
         "urlv2":"JYUMGjAdyU0",
@@ -10,7 +10,7 @@
     },
     {
         "id": "2",
-        "brand":"",
+        "brand":"Coleman",
         "logo": "",
         "urlV1": "",
         "url2":"",
@@ -19,7 +19,7 @@
     },
     {
         "id": "3",
-        "brand":"",
+        "brand":"Sevylor",
         "logo": "",
         "urlV1": "",
         "url2":"",
@@ -28,7 +28,7 @@
     },
     {
         "id": "4",
-        "brand":"",
+        "brand":"Gre",
         "logo": "",
         "urlV1": "",
         "url2":"",
@@ -37,7 +37,7 @@
     },
     {
         "id": "5",
-        "brand":"",
+        "brand":"Zodiac",
         "logo": "",
         "urlV1": "",
         "url2":"",
@@ -46,7 +46,7 @@
     },
     {
         "id": "6",
-        "brand":"",
+        "brand":"Crespo",
         "logo": "",
         "urlV1": "",
         "url2":"",
@@ -55,7 +55,34 @@
     },
     {
         "id": "7",
-        "brand":"",
+        "brand":"Fiskars",
+        "logo": "",
+        "urlV1": "",
+        "url2":"",
+        "url3":"",
+        "urlCatalog":""
+    },
+    {
+        "id": "8",
+        "brand":"M Confort",
+        "logo": "",
+        "urlV1": "",
+        "url2":"",
+        "url3":"",
+        "urlCatalog":""
+    },
+    {
+        "id": "9",
+        "brand":"Bp-Camp",
+        "logo": "",
+        "urlV1": "",
+        "url2":"",
+        "url3":"",
+        "urlCatalog":""
+    },
+    {
+        "id": "10",
+        "brand":"Plasmir",
         "logo": "",
         "urlV1": "",
         "url2":"",

@@ -6,11 +6,11 @@
     position: fixed;
 }
 .btSlides{
-    width: 100px;
-    height: 200px;
+    width: 10%;
+    height: 10%;
     position:absolute;
-    top: 40%
-
+    top: 50%;
+    
 }
 
 .catalogo{
@@ -24,8 +24,21 @@
     background-color:rgba(4, 0, 26, 0.9);
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/preloader2.gif') 50% 50% no-repeat rgb(255, 255, 255);
+    
+}
+
 @media (max-width: 767px) {
     .btSlides {
         top: 10%
     }
   }
+
+  

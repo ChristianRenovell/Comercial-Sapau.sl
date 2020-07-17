@@ -1,92 +1,94 @@
 [
     {
         "id": "1",
-        "brand":"Campingaz",
+        "brand": "Campingaz",
         "logo": "../assets/img/logos/campingaz-mini.png",
-        "urlV1": "UrZtRpwf6pQ",
-        "urlv2":"JYUMGjAdyU0",
-        "urlv3":"LwyqP_ToYzE",
-        "urlCatalog":"https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+        "urls": [
+                    "UrZtRpwf6pQ",
+                    "JYUMGjAdyU0",
+                    "LwyqP_ToYzE"
+                  ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "2",
-        "brand":"Coleman",
-        "logo": "",
+        "brand": "Coleman",
+        "logo": "../assets/img/logos/coleman-mini.png",
         "urlV1": "",
-        "url2":"",
-        "url3":"",
-        "urlCatalog":""
+        "url2": "",
+        "url3": "",
+        "urlCatalog": ""
     },
     {
         "id": "3",
-        "brand":"Sevylor",
+        "brand": "Sevylor",
         "logo": "",
         "urlV1": "",
-        "url2":"",
-        "url3":"",
-        "urlCatalog":""
+        "url2": "",
+        "url3": "",
+        "urlCatalog": ""
     },
     {
         "id": "4",
-        "brand":"Gre",
+        "brand": "Gre",
         "logo": "",
         "urlV1": "",
-        "url2":"",
-        "url3":"",
-        "urlCatalog":""
+        "url2": "",
+        "url3": "",
+        "urlCatalog": ""
     },
     {
         "id": "5",
-        "brand":"Zodiac",
+        "brand": "Zodiac",
         "logo": "",
         "urlV1": "",
-        "url2":"",
-        "url3":"",
-        "urlCatalog":""
+        "url2": "",
+        "url3": "",
+        "urlCatalog": ""
     },
     {
         "id": "6",
-        "brand":"Crespo",
+        "brand": "Crespo",
         "logo": "",
         "urlV1": "",
-        "url2":"",
-        "url3":"",
-        "urlCatalog":""
+        "url2": "",
+        "url3": "",
+        "urlCatalog": ""
     },
     {
         "id": "7",
-        "brand":"Fiskars",
+        "brand": "Fiskars",
         "logo": "",
         "urlV1": "",
-        "url2":"",
-        "url3":"",
-        "urlCatalog":""
+        "url2": "",
+        "url3": "",
+        "urlCatalog": ""
     },
     {
         "id": "8",
-        "brand":"M Confort",
+        "brand": "M Confort",
         "logo": "",
         "urlV1": "",
-        "url2":"",
-        "url3":"",
-        "urlCatalog":""
+        "url2": "",
+        "url3": "",
+        "urlCatalog": ""
     },
     {
         "id": "9",
-        "brand":"Bp-Camp",
+        "brand": "Bp-Camp",
         "logo": "",
         "urlV1": "",
-        "url2":"",
-        "url3":"",
-        "urlCatalog":""
+        "url2": "",
+        "url3": "",
+        "urlCatalog": ""
     },
     {
         "id": "10",
-        "brand":"Plasmir",
+        "brand": "Plasmir",
         "logo": "",
         "urlV1": "",
-        "url2":"",
-        "url3":"",
-        "urlCatalog":""
+        "url2": "",
+        "url3": "",
+        "urlCatalog": ""
     }
 ]

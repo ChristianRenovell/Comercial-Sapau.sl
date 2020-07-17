@@ -14,27 +14,30 @@ var param = window.location.search.substr(1);
       }
     });
     promise.then(res => {
-      objetVideo = {
-        height: '390',
-        width: '640',
-        videoId: res[param].urlV1
-      }
-      objetVideo2 = {
-        height: '390',
-        width: '640',
-        videoId: res[param].urlv2
-      }
-      objetVideo3 = {
-        height: '390',
-        width: '640',
-        videoId: res[param].urlv3
-      }
-      console.log(res[param].logo)
-      let tag = document.getElementById("logo")
+
+       let tag = document.getElementById("logo")
       tag.setAttribute("src", res[param].logo);
       let tag2 = document.getElementById("cat")
       tag2.setAttribute("src", res[param].urlCatalog);
       
+      console.log(res[param])
+      objetVideo = {
+        height: '390',
+        width: '640',
+        videoId: res[param].urls[0]
+      }
+      objetVideo2 = {
+        height: '390',
+        width: '640',
+        videoId: res[param].urls[1]
+      }
+      objetVideo3 = {
+        height: '390',
+        width: '640',
+        videoId: res[param].urls[2]
+      }
+     
+     
     });
 
     var tag = document.createElement('script');

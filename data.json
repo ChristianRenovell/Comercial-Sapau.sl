@@ -24,7 +24,7 @@
     {
         "id": "3",
         "brand": "Sevylor",
-        "logo": "../assets/img/logos/coleman-mini.png",
+        "logo": "../assets/img/logos/sevylor-mini.png",
         "urls": [
             "UrZtRpwf6pQ",
             "JYUMGjAdyU0",
@@ -35,7 +35,7 @@
     {
         "id": "4",
         "brand": "Gre",
-        "logo": "",
+        "logo": "../assets/img/logos/gre-mini.png",
         "urls": [
             "UrZtRpwf6pQ",
             "JYUMGjAdyU0",
@@ -46,7 +46,7 @@
     {
         "id": "5",
         "brand": "Zodiac",
-        "logo": "",
+        "logo": "../assets/img/logos/zodiac-mini.png",
         "urls": [
             "UrZtRpwf6pQ",
             "JYUMGjAdyU0",
@@ -57,7 +57,7 @@
     {
         "id": "6",
         "brand": "Crespo",
-        "logo": "",
+        "logo": "../assets/img/logos/crespo-mini.png",
         "urls": [
             "UrZtRpwf6pQ",
             "JYUMGjAdyU0",
@@ -68,7 +68,7 @@
     {
         "id": "7",
         "brand": "Fiskars",
-        "logo": "",
+        "logo": "../assets/img/logos/fiskars-mini.png",
         "urls": [
             "UrZtRpwf6pQ",
             "JYUMGjAdyU0",
@@ -79,7 +79,7 @@
     {
         "id": "8",
         "brand": "M Confort",
-        "logo": "",
+        "logo": "../assets/img/logos/mconfort-mini.png",
         "urls": [
             "UrZtRpwf6pQ",
             "JYUMGjAdyU0",
@@ -89,8 +89,8 @@
     },
     {
         "id": "9",
-        "brand": "Bp-Camp",
-        "logo": "",
+        "brand": "Bo-Camp",
+        "logo": "../assets/img/logos/bocamp-mini.png",
         "urls": [
             "UrZtRpwf6pQ",
             "JYUMGjAdyU0",
@@ -101,7 +101,7 @@
     {
         "id": "10",
         "brand": "Plasmir",
-        "logo": "",
+        "logo": "../assets/img/logos/plasmir-mini.png",
         "urls": [
             "UrZtRpwf6pQ",
             "JYUMGjAdyU0",

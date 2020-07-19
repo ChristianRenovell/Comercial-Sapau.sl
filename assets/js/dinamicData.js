@@ -24,10 +24,6 @@ promise.then(res => {
     videoId[i] = res[param].urls[i]
   }
 
-  if(videoId===null){
-    location.reload();
-  }
-
 });
 
 var tag = document.createElement('script');
@@ -39,6 +35,10 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 function onYouTubeIframeAPIReady() {
 
   console.log(videoId)
+  if(videoId===null){
+    alert("recargo la pagina")
+    location.reload();
+  }
 
   player1 = new YT.Player('player1', {
     height: '390',

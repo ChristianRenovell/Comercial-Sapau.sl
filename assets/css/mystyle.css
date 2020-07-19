@@ -20,6 +20,10 @@
     
     
 }
+.titleOfert{
+    margin-top: 30px;
+
+}
 .catalogo:hover{
     background-color:rgba(4, 0, 26, 0.9);
 }

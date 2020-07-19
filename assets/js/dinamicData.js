@@ -1,5 +1,4 @@
 let videoId = [];
-
 var param = window.location.search.substr(1);
 const promise = new Promise((resolve, reject) => {
   var requestURL = 'https://raw.githubusercontent.com/ChristianRenovell/Comercial-Sapau.sl/master/data.json';

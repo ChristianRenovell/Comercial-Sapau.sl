@@ -583,9 +583,9 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 20px 0;
-  background-color: #f7f7f7;
-  min-height: 40px;
+  padding: 5px 0;
+  background-color: #ffffff;
+  height: 120px;
   margin-top: 90px;
 }
 

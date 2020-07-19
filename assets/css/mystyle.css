@@ -24,6 +24,12 @@
     background-color:rgba(4, 0, 26, 0.9);
 }
 
+.logo{
+    margin-top: 2px;
+    margin-bottom: auto;
+}
+
+
 .loader {
     position: fixed;
     left: 0px;

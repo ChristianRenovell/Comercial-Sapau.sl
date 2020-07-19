@@ -1,4 +1,5 @@
 let videoId = [];
+
 var param = window.location.search.substr(1);
 const promise = new Promise((resolve, reject) => {
   var requestURL = 'https://raw.githubusercontent.com/ChristianRenovell/Comercial-Sapau.sl/master/data.json';
@@ -19,11 +20,14 @@ promise.then(res => {
   tag.setAttribute("src", res[param].logo);
   let tag2 = document.getElementById("cat")
   tag2.setAttribute("src", res[param].urlCatalog);
-  
-
   for (let i = 0; i < res[param].urls.length; i++) {
     videoId[i] = res[param].urls[i]
   }
+
+  if(videoId===null){
+    location.reload();
+  }
+
 });
 
 var tag = document.createElement('script');
@@ -33,38 +37,35 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 //CREAMOS LOS PLAYER DE LOS VIDEOS QUE AÑADIREMOS AL SLIDE
 function onYouTubeIframeAPIReady() {
- 
-  let activeVideo;
- 
-//resto de players
-  for (let i = 0; i < videoId.length; i++) {
-    if(i == 0){
-      activeVideo = "active"
-    } else{
-      activeVideo = ""
-    }
-    let carrousel = document.getElementById("content-itens-list");
-    let carouselIten = document.createElement("div");
-    carrousel.appendChild(carouselIten);
-    carouselIten.setAttribute("class","carousel-item "+activeVideo);
-    let divembed = document.createElement("div");
-    carouselIten.appendChild(divembed);
-    divembed.setAttribute("class","embed-responsive embed-responsive-16by9");
-    let divVideo = document.createElement("div");
-    divembed.appendChild(divVideo);    
-    divVideo.setAttribute("id", "player"+i);
-   
-    player = new YT.Player('player'+i, {
-      height: '390',
-      width: '640',
-      videoId: videoId[i]
-    });
-  }
-  
+
+  console.log(videoId)
+
+  player1 = new YT.Player('player1', {
+    height: '390',
+    width: '640',
+    videoId: videoId[0]
+  });
+
+  player2 = new YT.Player('player2', {
+    height: '390',
+    width: '640',
+    videoId: videoId[1]
+  });
+
+  player3 = new YT.Player('player3', {
+    height: '390',
+    width: '640',
+    videoId: videoId[2]
+  });
+
 }
 
-function pauseVideo() {
+function stopVideo() {
 
-  player.pauseVideo();
- 
+  player1.stopVideo();
+  player2.stopVideo();
+  player3.stopVideo();
+
 }
+
+

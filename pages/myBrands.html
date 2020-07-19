@@ -125,14 +125,32 @@
               <!-- Carousel -->
               <div id="carousel-example" class="carousel slide">
                 <div class="carousel-inner" id="content-itens-list">
+                  <div class="carousel-item active">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <div id="player1">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <div id="player2">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <div id="player3">
+                        </div>
+                    </div>
+                  </div>
                 </div>
-                <a class="carousel-control-prev btSlides" href="#carousel-example" role="button" data-slide="prev" onClick="pauseVideo()">
+                <a class="carousel-control-prev btSlides" href="#carousel-example" role="button" data-slide="prev" onClick="stopVideo()">
                   <span aria-hidden="true">
                     <img src="../assets/img/left.png" class="img-fluid" alt="siguiente" width="25px">
                   </span>
                   <span class="sr-only"></span>
                 </a>
-                <a class="carousel-control-next btSlides" href="#carousel-example" role="button" data-slide="next" onClick="pauseVideo()">
+                <a class="carousel-control-next btSlides" href="#carousel-example" role="button" data-slide="next" onClick="stopVideo()">
                   <span aria-hidden="true"><img src="../assets/img/right.png" class="img-fluid" alt="anterior"
                       width="25px">
                   </span>
@@ -224,7 +242,7 @@
 
   <!-- Javascript -->
 
-  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="../assets/js/jquery-migrate-3.0.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

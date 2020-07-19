@@ -4,91 +4,109 @@
         "brand": "Campingaz",
         "logo": "../assets/img/logos/campingaz-mini.png",
         "urls": [
-                    "UrZtRpwf6pQ",
-                    "JYUMGjAdyU0",
-                    "LwyqP_ToYzE"
-                  ],
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
         "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "2",
         "brand": "Coleman",
         "logo": "../assets/img/logos/coleman-mini.png",
-        "urlV1": "",
-        "url2": "",
-        "url3": "",
-        "urlCatalog": ""
+        "urls": [
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "3",
         "brand": "Sevylor",
-        "logo": "",
-        "urlV1": "",
-        "url2": "",
-        "url3": "",
-        "urlCatalog": ""
+        "logo": "../assets/img/logos/coleman-mini.png",
+        "urls": [
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "4",
         "brand": "Gre",
         "logo": "",
-        "urlV1": "",
-        "url2": "",
-        "url3": "",
-        "urlCatalog": ""
+        "urls": [
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "5",
         "brand": "Zodiac",
         "logo": "",
-        "urlV1": "",
-        "url2": "",
-        "url3": "",
-        "urlCatalog": ""
+        "urls": [
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "6",
         "brand": "Crespo",
         "logo": "",
-        "urlV1": "",
-        "url2": "",
-        "url3": "",
-        "urlCatalog": ""
+        "urls": [
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "7",
         "brand": "Fiskars",
         "logo": "",
-        "urlV1": "",
-        "url2": "",
-        "url3": "",
-        "urlCatalog": ""
+        "urls": [
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "8",
         "brand": "M Confort",
         "logo": "",
-        "urlV1": "",
-        "url2": "",
-        "url3": "",
-        "urlCatalog": ""
+        "urls": [
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "9",
         "brand": "Bp-Camp",
         "logo": "",
-        "urlV1": "",
-        "url2": "",
-        "url3": "",
-        "urlCatalog": ""
+        "urls": [
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     },
     {
         "id": "10",
         "brand": "Plasmir",
         "logo": "",
-        "urlV1": "",
-        "url2": "",
-        "url3": "",
-        "urlCatalog": ""
+        "urls": [
+            "UrZtRpwf6pQ",
+            "JYUMGjAdyU0",
+            "LwyqP_ToYzE"
+        ],
+        "urlCatalog": "https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
     }
 ]

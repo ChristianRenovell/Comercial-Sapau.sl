@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="../assets/css/media-queries.css">
 
   <link rel="stylesheet" href="../assets/css/mystyle.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
@@ -45,6 +45,11 @@
 </head>
 
 <body>
+  <script type="text/javascript">
+    $(window).load(function () {
+      $(".loader").fadeOut("fast");
+    });  
+  </script>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top  ">
     <div class="container-fluid">
@@ -92,7 +97,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-header titleOfert">
-              <h3>OFERTAS VARIOS</h3>
+              <h3 id="title"></h3>
             </div>
           </div>
         </div>
@@ -100,9 +105,7 @@
     </section>
     <section>
         <div class="container">
-          <iframe
-          src="https://docs.google.com/viewer?srcid=1xfHoonWrY7aEVgQC0cqntwufUjPWLvg6&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-          width="100%" height="625px"></iframe>
+          <iframe id="cat" width="100%" height="625px"></iframe>
         </div>
     </div>
       <!-- END NAV video catalogo-->
@@ -179,7 +182,7 @@
   <script src="../assets/vendor/aos/aos.js"></script>
 
   <!-- Javascript -->
-  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+
   <script src="../assets/js/jquery-migrate-3.0.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -191,8 +194,7 @@
   <script src="../assets/js/wow.min.js"></script>
   <script src="../assets/js/waypoints.min.js"></script>
   <script src="../assets/js/scripts.js"></script>
-  <script src="../assets/js//CarouselTtle.js"></script>
-
+  <script src="../assets/js/dinamicDataOferts.js"></script>
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 

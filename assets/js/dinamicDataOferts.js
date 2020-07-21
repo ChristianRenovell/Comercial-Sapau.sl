@@ -11,5 +11,12 @@ const promise = new Promise((resolve, reject) => {
     //almacenamos el json en una variable
     var res = datos;
     resolve(res)
+    document.getElementById("title").innerHTML = res[param].name;
+  let tag2 = document.getElementById("cat")
+  tag2.setAttribute("src", res[param].urlCatalog);
   }
 });
+
+  
+  
+

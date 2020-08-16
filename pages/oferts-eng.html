@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Sapau-Marcas</title>
+  <title>Sapau-Ofertas</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="../assets/css/animate.css">
   <link rel="stylesheet" href="../assets/css/styleVideoCarousel.css">
   <link rel="stylesheet" href="../assets/css/media-queries.css">
+
   <link rel="stylesheet" href="../assets/css/mystyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <!-- Template Main CSS File -->
@@ -54,16 +55,17 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-11 d-flex align-items-center">
-          <a href="../index.html"><img src="../assets/img/logos/sapauLogo2.png" alt="" width="200px"
+          <a href="../index-eng.html"><img src="../assets/img/logos/sapauLogo2.png" alt="" width="200px"
               height="auto"><img /></a>
           <h1 class="logo mr-auto"><a href="../index.html"></a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
           <nav class="nav-menu d-none d-lg-block ">
             <ul>
-              <li class="active"><a href="../index.html">Inicio</a></li>
-              <li><a href="../index.html#about">Sobre nosotros</a></li>
-              <li class="drop-down"><a href="../index.html#team">Nuestras marcas</a>
+              <li class="active"><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#about">
+                About us</a></li>
+              <li class="drop-down"><a href="../index.html#team">Our brands</a>
                 <ul>
                   <li><a href="./MyBrands.html?0">Campingaz</a></li>
                   <li><a href="./MyBrands.html?1">Coleman</a></li>
@@ -77,8 +79,8 @@
                   <li><a href="./MyBrands.html?9">Plasmir</a></li>
                 </ul>
               </li>
-              <li><a href="../index.html#oulet">Ofertas outlet</a></li>
-              <li><a href="../index.html#contact">contacto</a></li>
+              <li><a href="../index.html#oulet">Oferts and outlet</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
               <li>
                 <a href="../index.html"><img src="../assets/img/es.png" class="img-fluid " alt="" width="25px"></a>
               </li>
@@ -97,70 +99,18 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="d-flex col-md-12 mb-2 justify-content-center" id="im">
-              <img class="img-fluid logo" alt="logo" width="230px" id="logo">
+            <div class="section-header titleOfert">
+              <h3 id="title"></h3>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <!--NAV video catalogo-->
-      <div class="container mb-5 mt-3 ">
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active catalogo" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-              aria-controls="nav-home" aria-selected="true">Videos</a>
-            <a class="nav-item nav-link  catalogo" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-              aria-controls="nav-profile" aria-selected="false" onclick="pauseVideo()">Catalogo</a>
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <!-- ======= Breadcrumbs Section ======= -->
-            <section>
-              <!-- Carousel -->
-              <div id="carousel-example" class="carousel slide">
-                <div class="carousel-inner" id="content-itens-list">
-                  <div class="carousel-item active">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <div id="player1">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item ">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <div id="player2">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item ">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <div id="player3">
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev btSlides" href="#carousel-example" role="button" data-slide="prev" onClick="stopVideo()">
-                  <span aria-hidden="true">
-                    <img src="../assets/img/left.png" class="img-fluid" alt="siguiente" width="25px">
-                  </span>
-                  <span class="sr-only"></span>
-                </a>
-                <a class="carousel-control-next btSlides" href="#carousel-example" role="button" data-slide="next" onClick="stopVideo()">
-                  <span aria-hidden="true"><img src="../assets/img/right.png" class="img-fluid" alt="anterior"
-                      width="25px">
-                  </span>
-                  <span class="sr-only"></span>
-                </a>
-              </div>             
-            </section><!-- Breadcrumbs Section -->
-          </div>
-          <div class="tab-pane fade " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <iframe id="cat" width="100%" height="625px"></iframe>
-          </div>
+        <div class="container">
+          <iframe id="cat" width="100%" height="625px"></iframe>
         </div>
-      </div>
+    </div>
       <!-- END NAV video catalogo-->
     </section>
   </main><!-- End #main -->
@@ -171,28 +121,29 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 footer-info">
             <h3>SAPAU</h3>
-            <p>Comenzamos la andadura a principios del año 2000 procurando en todo momento, disponer de firmas de
-              prestigio para su distribución en el Archipiélago Canario. Apostamos por trabajar con marcas reconocidas y
-              de calidad en los sectores de camping y playa, ferretería, bricolaje, jardín, hogar y deporte. </p>
+            <p>
+              We began the journey at the beginning of the year 2000 trying at all times to have signatures of
+                            prestige for distribution in the Canary Archipelago. We bet on working with recognized brands and
+                            quality in the camping and beach, hardware, DIY, garden, home and sports sectors.</p>
           </div>
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Enlaces</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Inicio</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Sobre nosotros</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Nuestras Marcas</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Our brands</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-contact">
-            <h4>Contacta con nosotros</h4>
+            <h4>Contact us</h4>
             <p>
               Plaza Dimas Coello nº 2 Igueste de Candelaria 38520<br>
               Santa Cruz de Tenerife<br>
               España <br>
-              <strong>Telefono::</strong> +34 922 50 27 65<br>
+              <strong>Telephon::</strong> +34 922 50 27 65<br>
               <strong>Email:</strong> sapau@sapau.com<br>
             </p>
           </div>
@@ -221,7 +172,6 @@
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
 
-
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -236,8 +186,6 @@
 
   <!-- Javascript -->
 
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="../assets/js/jquery-migrate-3.0.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -249,11 +197,9 @@
   <script src="../assets/js/wow.min.js"></script>
   <script src="../assets/js/waypoints.min.js"></script>
   <script src="../assets/js/scripts.js"></script>
-
-
+  <script src="../assets/js/dinamicDataOferts.js"></script>
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/dinamicData.js"></script>
 
 </body>
 

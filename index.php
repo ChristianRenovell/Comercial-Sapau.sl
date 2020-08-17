@@ -30,12 +30,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: BizPage - v3.0.0
-  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -45,7 +40,7 @@
 
       <div class="row justify-content-center">
         <div class="col-xl-11 d-flex align-items-center">
-          <a href="index.html"><img src="assets/img/logos/sapauLogo2.png" alt="" width="200px" height="auto"><img /></a>
+          <a href="index.html"><img src="assets/img/logos/sapauLogo2.png" alt="" width="30%" height="auto"><img /></a>
           <h1 class="logo mr-auto"></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -93,7 +88,7 @@
           <div class="carousel-item active" style="background-image: url(assets/img/slide/campingaz.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4"/>
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%"/>
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
                 <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Solicite
                   información</a>
@@ -104,7 +99,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/sevylor.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4"/>
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%"/>
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
                 <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Solicite
                   información</a>
@@ -115,7 +110,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/coleman.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4"/>
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%"/>
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
                 <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Solicite
                   información</a>
@@ -125,7 +120,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/gre.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4"/>
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%"/>
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
                 <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Solicite
                   información</a>
@@ -135,7 +130,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/mconfort.png)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4"/>
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%"/>
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
                 <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Solicite
                   información</a>
@@ -454,39 +449,36 @@
               <p><a href="mailto:sapau@sapau.com">sapau@sapau.com</a></p>
             </div>
           </div>
-
         </div>
-
         <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="sendEmail.php" method="post" role="form" class="php-email-form" enctype="text/plain">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars" />
+                  data-msg="Por favor relleno este campo." />
                 <div class="validate"></div>
               </div>
               <div class="form-group col-md-6">
                 <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email"
-                  data-msg="Please enter a valid email" />
+                  data-msg="Por favor ingrese un email valido." />
                 <div class="validate"></div>
               </div>
             </div>
             <div class="form-group">
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                data-rule="minlen:4" data-msg="Por favor indiquenos un asunto." />
               <div class="validate"></div>
             </div>
             <div class="form-group">
               <textarea class="form-control" name="message" rows="5" data-rule="required"
-                data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                data-msg="Por favor escriba un mensaje." placeholder="Mensaje"></textarea>
               <div class="validate"></div>
             </div>
             <div class="mb-3">
               <div class="loading">Cargando</div>
-              <div class="error-message"></div>
               <div class="sent-message">Su mensaje ha sido enviado, gracias. </div>
             </div>
-            <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+            <div class="text-center"><button type="submit" name="enviar">Enviar Mensaje</button></div>
           </form>
         </div>
 

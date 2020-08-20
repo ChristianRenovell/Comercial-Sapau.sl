@@ -14,8 +14,7 @@
   <link href="assets/img/logos/logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,15 +44,14 @@
 
       <div class="row justify-content-center">
         <div class="col-xl-11 d-flex align-items-center">
-          <a href="index-eng.html"><img src="assets/img/logos/sapauLogo2.png" alt="" width="200px"
-              height="auto"><img /></a>
+          <a href="index-eng.php"><img src="assets/img/logos/sapauLogo2.png" alt="" width="200px" height="auto"><img /></a>
           <h1 class="logo mr-auto"></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active"><a href="index-eng.php">Home</a></li>
               <li><a href="#about">About us</a></li>
               <li class="drop-down"><a href="#team">Our brands</a>
                 <ul>
@@ -72,17 +70,15 @@
               <li><a href="#oulet">Offers outlet</a></li>
               <li><a href="#contact">Contact</a></li>
               <li>
-                <a href="./index.html"><img src="assets/img/es.png" class="img-fluid " alt="" width="25px"></a>
+                <a href="./index.php"><img src="assets/img/es.png" class="img-fluid " alt="" width="25px"></a>
               </li>
               <li>
-                <a href="./index-eng.html"><img src="assets/img/en.png" class="img-fluid" alt="" width="25px"></a>
+                <a href="./index-eng.php"><img src="assets/img/en.png" class="img-fluid" alt="" width="25px"></a>
               </li>
-
             </ul>
           </nav><!-- .nav-menu -->
         </div>
       </div>
-
     </div>
   </header><!-- End Header -->
   <!-- ======= Intro Section ======= -->
@@ -94,9 +90,10 @@
           <div class="carousel-item active" style="background-image: url(assets/img/slide/campingaz.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" />
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%" />
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
-                <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Contact Us</a>
+                <a href="#contact" class="btn-get-started scrollto animate__animated ">Contact Us</a>
+                <!--<a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Contact Us</a>-->
               </div>
             </div>
           </div>
@@ -104,25 +101,25 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/sevylor.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" />
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%" />
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
-                <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Contact Us</a>
+                <a href="#contact" class="btn-get-started scrollto ">Contact Us</a>
               </div>
             </div>
           </div>
           <div class="carousel-item" style="background-image: url(assets/img/slide/coleman.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" />
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%" />
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
-                <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Contact Us</a>
+                <a href="#contact" class="btn-get-started ">Contact Us</a>
               </div>
             </div>
           </div>
           <div class="carousel-item" style="background-image: url(assets/img/slide/gre.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" />
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%" />
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
                 <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Contact Us</a>
               </div>
@@ -131,7 +128,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/mconfort.png)">
             <div class="carousel-container">
               <div class="container">
-                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" />
+                <img src="assets/img/logos/sapauLogo2.png" class="mb-4" width="50%" />
                 <p class="animate__animated animate__fadeInUp mb-4"></p>
                 <a href="#contact" class="btn-get-started scrollto animate__animated animate__fadeInUp">Contact Us</a>
               </div>
@@ -461,27 +458,23 @@
         </div>
 
         <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="sendEmail.php" method="post" role="form" class="php-email-form">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validate"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email"
-                  data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validate"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Affair"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Affair" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <div class="validate"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required"
-                data-msg="Please write something for us" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validate"></div>
             </div>
             <div class="mb-3">
@@ -514,12 +507,11 @@
           <div class="col-lg-4 col-md-12 footer-links">
             <h4>Enlaces</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">
-                  Our brands</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index-eng.php">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index-eng.php#about">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index-eng.php#team">Our brands</a></li>
+              Our brands</a></li>
+
             </ul>
           </div>
 
@@ -532,10 +524,7 @@
               España <br>
               <strong>Telephon:</strong> +34 922 50 27 65<br>
               <strong>Email:</strong> sapau@sapau.com<br>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.332477967093!2d-16.375515184574592!3d28.37902430225932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc402d1175c2a039%3A0xc3124cdf1077ecfd!2sComercial%20Sapau%20S.L.!5e0!3m2!1ses!2ses!4v1593708821771!5m2!1ses!2ses"
-                width="auto" height="125" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0" class="mt-4"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.332477967093!2d-16.375515184574592!3d28.37902430225932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc402d1175c2a039%3A0xc3124cdf1077ecfd!2sComercial%20Sapau%20S.L.!5e0!3m2!1ses!2ses!4v1593708821771!5m2!1ses!2ses" width="auto" height="125" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="mt-4"></iframe>
             </p>
           </div>
         </div>

@@ -14,17 +14,19 @@ const promise = new Promise((resolve, reject) => {
     resolve(res)
   }
 });
+//carga el logo y el catalogo
 promise.then(res => {
   let tag = document.getElementById("logo")
   tag.setAttribute("src", res[param].logo);
   let tag2 = document.getElementById("cat")
+  console.log(res[param].urlCatalog, "este es el catalogo")
   tag2.setAttribute("src", res[param].urlCatalog);
   for (let i = 0; i < res[param].urls.length; i++) {
     videoId[i] = res[param].urls[i]
   }
 
 });
-
+//carga los videos
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
